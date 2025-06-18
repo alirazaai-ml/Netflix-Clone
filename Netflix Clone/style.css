@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* 
+body {
+    background-color: rgba(32, 28, 28, 0.774);
+} */
+
+.main {
+    background-image: url(assets/images/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: max(1200px, 100vw);
+    height: 100vh;
+    position: relative;
+}
+
+.main .box {
+    height: 100vh;
+    width: 100%;
+    opacity: 0.43;
+    position: absolute;
+    top: 0;
+    background-color: black;
+}
+
+nav {
+    max-width: 80vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+nav img {
+    color: red;
+    width: 114px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+
+}
+
+.hero {
+    font-family: 'Martel Sans', sans-serif;
+    height: calc(100% - 62px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    gap: 20px;
+    
+    padding: 0 30px;
+}
+
+.hero> :nth-child(1) {
+    font-weight: 900;
+    font-size: 48px;
+    text-align: center;
+}
+
+.hero> :nth-child(2) {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+
+.seperation {
+    height: 12px;
+    background-color: #0a0505ea;
+}
+
+.btn {
+    padding: 3px 8px;
+    font-weight: bold;
+    background-color: rgba(95, 85, 85, 0.685);
+    border-color: white;
+    text-decoration: none;
+    color: white;
+}
+
+.btn-red {
+    background-color: red;
+    color: white;
+    border-color: red;
+    padding: 3px 24px;
+    font-size: 24px;
+    border-radius: 8px;
+
+}
+
+.btn-red-sm {
+    background-color: red;
+    height: 30px;
+    width: 74px;
+    color: white;
+    border-radius: 18px;
+    border-color: red;
+    text-decoration: none;
+}
+
+.hero-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+
+}
+
+.main input {
+    padding: 7px 100px 8px 14px;
+    font-weight: 900;
+    font-size: 15px;
+    border-radius: 8px;
+    border: 1px solid rgba(23, 23, 23, 0.7);
+    background-color: rgba(23, 23, 23, 0.5);
+    color: white;
+}
+
+/* movie section */
+.trending {
+    color: black;
+    margin: 10px;
+    padding-top: 40px;
+
+    margin-left: 80px;
+
+}
+
+.trend-movie-sec {
+    
+    /* color: white; */
+    height: 280px;
+    width: 200px;
+    border-radius: 10px;
+    justify-content: space-evenly;
+    background-color: #0A0505;
+
+    margin-top: 15px;
+}
+
+.trend-movie-sec:hover {
+    height: 285px;
+    width: 202px;
+}
+
+#op {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.backcolor {
+    background-color: #0a0505ea;
+}
+
+.movie {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* reason section */
+.reason {
+    color: white;
+    padding-top: 50px;
+    padding-left: 100px;
+    font-weight: 750;
+   
+
+}
+
+.reason-sec {
+    height: 130px;
+    width: 250px;
+    border-radius: 20px;
+    background-color: #4233335b;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    color: white;
+    padding: 10px;
+}
+
+.reason-out {
+    width: 100%;
+    max-width: 1150px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+
+}
+
+.reason-con {
+    padding-top: 10px;
+    padding-left: 7px;
+    font-weight: 600;
+}
+
+/* -------faq----- */
+.faq {
+    background-color: #0a0505ea;
+    color: white;
+    padding: 10px 10%;
+    font-size: 18px;
+    /* text-align: center; */
+}
+
+.faq h2 {
+    font-weight: 700;
+    font-size: 40px;
+
+
+}
+
+.accordion {
+    margin: 60px auto;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.accordion li {
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+
+.accordion li label {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    background: #4233335b;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+
+label::after {
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.accordion .contant1 {
+    background: #4233335b;
+    text-align: left;
+    padding: 0 20px;
+    border-radius: 20px;
+    margin-top: 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+
+.accordion input[type="radio"]:checked+label+.contant1 {
+    max-height: 600px;
+    padding: 30px 20px;
+}
+
+.accordion input[type="radio"]:checked+label::after {
+    rotate: 135deg;
+}
+
+/* button */
+.gtbut {
+    background-color: rgba(255, 0, 0, 0.911);
+    border-color: rgba(255, 0, 0, 0.911);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 20px;
+    height: 40px;
+    width: 150px;
+    text-align: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.pgtbut {
+    font-weight: 540;
+}
+
+/* footer */
+
+.foot-penel2 {
+    background-color: #0a0505ea;
+    color: #ddddddd0;
+    height: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    text-decoration: underline;
+}
+
+ul {
+    margin-top: 20px;
+}
+
+ul a {
+    display: block;
+    font-size: 0.9rem;
+    margin-top: 10px;
+    color: #ddddddd0;
+}
+
+
+.custom-select {
+    width: 120px;
+    height: 35px;
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 160px;
+    border: 2px solid white;
+    border-radius: 20px;
+    background-color: #1e1a1a;
+    color: white;
+    cursor: pointer;
+}
+
+.engbn {
+    margin-left: 160px;
+    color: #ddddddd0;
+    padding-top: 40px;
+}
